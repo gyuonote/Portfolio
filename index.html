@@ -25,10 +25,10 @@
   <body>
     <!-- Navbar -->
     <nav id="navbar">
-      <div class="navbar__logo"></div>
-      <i href="imgs/favicon.png"></i>
-      <a href="#">Gyuo</a>
-      <div class="navbar__menu">
+      <div class="navbar__logo">
+        <i href="imgs/favicon.png"></i>
+        <a href="#">Gyuo</a>
+      </div>
         <ul class="navbar__menu">
           <li class="navbar__menu__item">Home</li>
           <li class="navbar__menu__item">About</li>
@@ -39,8 +39,37 @@
         </ul>
       </div>
     </nav>
+    <!-- Home -->
+    <section id="home">
+      <img src="imgs/profile.png" alt="Gyuo's profile photoa" class="home__avatar">
+    </section>
     <!-- About -->
-    <section id="about"></section>
+    <section id="about">
+      <h1>About me</h1>
+      <p>
+        웹사이트 프로젝트를 진행 도중 UI만 만들기보다는 전체적인 웹사이트 개발 사이클을 직접 이해하고 제작해 보고 싶은 호기심이 있었기에 데이터베이스를 구축하여 실제 데이터를 담아보고 REST API를 공부하여 클라이언트랑 서버 간에 데이터가 어떻게 주고받는지 데이터 흐름은 어떻게 흘러가는지 공부하였습니다 하나의 영역에서 공부하는 것보다 다방면으로 공부를 하다 보니 제 호기심 많은 성격 덕분에 전체적인 기술을 빠르게 익히고 습득하는데 시너지 효과를 발휘할 수 있었습니다.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="major__title">Front-end</div>
+          <div class="major__description">
+            HTML, CSS, Javascript, React
+          </div>
+        </div>
+      </div>
+      <div class="about__jobd"></div>
+      <div class="job">
+        <img src="imgs/jobs/job.png" alt="Wide Net Engineering" class="job__logo">
+        <p class="job__name">
+          Application QA
+        </p>
+        <p class="job__period">2018 Apr - 2020 Jan</p>
+      </div>
+      <div class="job"></div>
+    </section>
     <!-- Skills -->
     <section id="skills"></section>
     <!-- Work -->
