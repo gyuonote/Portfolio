@@ -1,82 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gyuo's Portfolio</title>
-    <meta name="description" content="Portfolio software engineer Gyuo" />
-    <meta name="author" content="Gyuo" />
-    <link rel="icon" type="image/png" href="imgs/favicon.png" />
-    <script
-      src="https://kit.fontawesome.com/6d337d0793.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    font-family: 'Open Sans', sans-serif;
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i href="imgs/favicon.png"></i>
-        <a href="#">Gyuo</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gyuo's Portfolio</title>
+  <meta name="description" content="Portfolio software engineer Gyuo" />
+  <meta name="author" content="Gyuo" />
+  <link rel="icon" type="image/png" href="imgs/favicon.png" />
+  <script src="https://kit.fontawesome.com/6d337d0793.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <i href="imgs/favicon.png"></i>
+      <a href="#">Gyuo</a>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item">Home</li>
+      <li class="navbar__menu__item">About</li>
+      <li class="navbar__menu__item">Skills</li>
+      <li class="navbar__menu__item">My work</li>
+      <li class="navbar__menu__item">Testimonial</li>
+      <li class="navbar__menu__item">Contact</li>
+    </ul>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <img src="imgs/profile.png" alt="Gyuo's profile photoa" class="home__avatar">
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h1>About me</h1>
+    <p>
+      QA 업무를 보다가 다양한 애플리케이션을 검증하던 도중 만약 내가 개발자라면 UI나 기능을 더욱더 보기 좋고 편하게 만들어봐도 괜찮겠다. 라는 아이디어가 떠올라 정부 지원 직업훈련 교육으로 빅데이터
+      Java 개발자 양성과정을 이수하게 되었습니다. 처음 개발을 배울 때는 이해하기도 어렵고 생소하기는 했지만 기초를 하나하나 배울 때마다 이해도가 점점 올라가고 문제를 스스로 해결했을 때 즐거움을
+      느꼈습니다. 또한 교육과정을 이수하고 나서 새로운 개발 영역을 공부해 보고 싶다는 마음이 더욱 강해져 리액트 교육을 추가로 듣게 되었고 리액트를 듣다 보니 백엔드 부분도 공부하고 있는 제 자신을 보면서
+      트렌드에 민감한 개발 직무가 저에게 맞는다는 것을 확신했습니다.
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="major__title">Front-end</div>
+        <div class="major__description">
+          HTML, CSS, Javascript, React
+        </div>
       </div>
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">My work</li>
-          <li class="navbar__menu__item">Testimonial</li>
-          <li class="navbar__menu__item">Contact</li>
-        </ul>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <div class="major__title">Back-end</div>
+        <div class="major__description">
+          Node.js
+        </div>
       </div>
-    </nav>
-    <!-- Home -->
-    <section id="home">
-      <img src="imgs/profile.png" alt="Gyuo's profile photoa" class="home__avatar">
-    </section>
-    <!-- About -->
-    <section id="about">
-      <h1>About me</h1>
-      <p>
-        웹사이트 프로젝트를 진행 도중 UI만 만들기보다는 전체적인 웹사이트 개발 사이클을 직접 이해하고 제작해 보고 싶은 호기심이 있었기에 데이터베이스를 구축하여 실제 데이터를 담아보고 REST API를 공부하여 클라이언트랑 서버 간에 데이터가 어떻게 주고받는지 데이터 흐름은 어떻게 흘러가는지 공부하였습니다 하나의 영역에서 공부하는 것보다 다방면으로 공부를 하다 보니 제 호기심 많은 성격 덕분에 전체적인 기술을 빠르게 익히고 습득하는데 시너지 효과를 발휘할 수 있었습니다.
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="major__title">database</div>
+        <div class="major__description">
+          MySQL, MongoDB
+        </div>
+      </div>
+    </div>
+    <div class="about__jobs"></div>
+    <div class="job">
+      <img src="imgs/jobs/job.png" alt="Wide Net Engineering" class="job__logo">
+      <p class="job__name">
+        Application QA
       </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-html5"></i>
+      <p class="job__period">2018 Apr - 2020 Jan</p>
+    </div>
+    <div class="job"></div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <h2>Skills & Attributes</h2>
+    <p>
+      웹사이트 프로젝트를 진행 도중 UI만 만들기보다는 전체적인 웹사이트 개발 사이클을 직접 이해하고 제작해 보고 싶은 호기심이 있었기에 데이터베이스를 구축하여 실제 데이터를 담아보고 REST API를 공부하여
+      클라이언트랑 서버 간에 데이터가 어떻게 주고받는지 데이터 흐름은 어떻게 흘러가는지 공부하였습니다 하나의 영역에서 공부하는 것보다 다방면으로 공부를 하다 보니 제 호기심 많은 성격 덕분에 전체적인 기술을
+      빠르게 익히고 습득하는데 시너지 효과를 발휘할 수 있었습니다.
+    </p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset_title">Skills</h3>
+        <div class="skill">
+          <div class="skill_description">
+            <span>HTML</span>
+            <span>90%</span>
           </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">
-            HTML, CSS, Javascript, React
+          <div class="skill__bar">
+            <div class="skill_value"></div>
+          </div>
+          <div class="skill_description">
+            <span>CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill_value"></div>
+          </div>
+          <div class="skill_description">
+            <span>NODE.JS</span>
+            <span>50%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill_value"></div>
+          </div>
+          <div class="skill_description">
+            <span>REACT</span>
+            <span>65%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill_value"></div>
+          </div>
+          <div class="skill_description">
+            <span>JAVASCRIPT</span>
+            <span>70%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill_value"></div>
           </div>
         </div>
       </div>
-      <div class="about__jobd"></div>
-      <div class="job">
-        <img src="imgs/jobs/job.png" alt="Wide Net Engineering" class="job__logo">
-        <p class="job__name">
-          Application QA
-        </p>
-        <p class="job__period">2018 Apr - 2020 Jan</p>
+      <div class="skillset__right">
+        <div class="tools">
+          <h3 class="skillset_title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Visual Studio Code</span></li>
+            <li><span>MongoDB Compass</span></li>
+            <li><span>GitHub</span></li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="skillset_title">Etc</h3>
+          <ul class="etc__list">
+            <li>
+              <apsn>Git</apsn>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="job"></div>
-    </section>
-    <!-- Skills -->
-    <section id="skills"></section>
-    <!-- Work -->
-    <section id="work"></section>
-    <!-- Testimonials -->
-    <section id="testimonials"></section>
-    <!-- Contact -->
-    <section id="contact"></section>
-  </body>
+    </div>
+  </section>
+  <!-- Work -->
+  <section id="work"></section>
+  <!-- Testimonials -->
+  <section id="testimonials"></section>
+  <!-- Contact -->
+  <section id="contact"></section>
+</body>
+
 </html>
