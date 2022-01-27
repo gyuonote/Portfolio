@@ -96,12 +96,19 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-grey);
+  background-color: transparent;
   align-items: center;
-  color: var(--color-white);
-  padding: 16px;
+  padding: 8px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-light-grey);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -135,7 +142,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 24px;
+  top: 13px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
@@ -144,8 +151,8 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home-backgorund.png") center/cover no-repeat;
-  padding: 170px;
+  background: url("imgs/projects/home-backgorund.png") center/cover no-repeat;
+  padding: 140px;
   text-align: center;
 }
 
