@@ -30,7 +30,7 @@ navbarToggleBtn.addEventListener("click", () => {
 });
 
 let target = document.querySelector("#dynamic");
-let stringArr = ["안녕하세요 Front-end developer심규오입니다."];
+let stringArr = ["안녕하세요 Developer 심규오입니다."];
 let selectString = stringArr[Math.floor(Math.random() * stringArr.length)];
 let selectStringArr = selectString.split("");
 
@@ -58,13 +58,15 @@ homeContactBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
-// Make home slowly fade to transparent as the window scrolls down
+//Make home slowly fade to transparent as the window scrolls down
 
 const home = document.querySelector(".home__container");
 const homeHeight = home.getBoundingClientRect().height;
+/*
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+*/
 
 // Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector(".arrow-up");

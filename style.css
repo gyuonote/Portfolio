@@ -109,7 +109,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-blue);
+  background-color: #ff9933;
 }
 
 .navbar__logo {
@@ -139,7 +139,7 @@ p {
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
-  background-color: var(--color-black);
+  background-color: var(--color-grey);
 }
 
 .navbar__toggle-btn {
@@ -154,7 +154,8 @@ p {
 /* Home */
 #home {
   background: url("imgs/projects/home-backgound.png") center/cover no-repeat;
-  padding: 355px;
+  padding-top: 370px;
+  padding-bottom: 370px;
   text-align: center;
   animation-iteration-count: 1;
 }
@@ -170,6 +171,8 @@ p {
 
 .home__description {
   color: var(--color-white);
+  font-size: 3vmax;
+  white-space: nowrap;
 }
 #dynamic {
   position: relative;
@@ -197,6 +200,7 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  white-space: nowrap;
 }
 
 .home__contact:hover {
@@ -504,6 +508,10 @@ p {
   #home {
     padding: 0px;
     padding-top: 80px;
+  }
+
+  .home__description {
+    font-size: var(--font-medium);
   }
 
   .navbar__toggle-btn {
