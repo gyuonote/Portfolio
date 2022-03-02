@@ -20,12 +20,13 @@
 
   /* Font size */
   --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
+  --font-medium: 32px;
+  --font-regular: 23px;
   --font-small: 16px;
   --font-micro: 14px;
 
   /* Font weight */
+  --weight-high-bold: 800;
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
@@ -35,6 +36,13 @@
 
   /* Annimation */
   --animation-duration: 300ms;
+}
+
+/* Font-Awesome */
+#about-icon {
+  margin-right: 20px;
+  font-size: 45px;
+  color: var(--color-dark-grey);
 }
 
 /* Universal tags */
@@ -70,9 +78,9 @@ button {
 /* Typography */
 h1 {
   font-size: var(--font-large);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-high-bold);
   color: var(--color-black);
-  margin: 16px 0px;
+  margin: 32px 0px;
 }
 
 h2 {
@@ -84,16 +92,16 @@ h2 {
 
 h3 {
   font-size: var(--font-regular);
-  font-weight: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0px;
+  margin: 10px 0px;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--font-regular);
   color: var(--color-black);
-  margin: 4px 0px;
+  margin: 10px 0px;
 }
 
 /* Navbar */
@@ -154,8 +162,8 @@ p {
 /* Home */
 #home {
   background: url("imgs/projects/home-backgound.png") center/cover no-repeat;
-  padding-top: 370px;
-  padding-bottom: 370px;
+  padding-top: 360px;
+  padding-bottom: 360px;
   text-align: center;
   animation-iteration-count: 1;
 }
@@ -222,6 +230,7 @@ p {
 
 .about__container {
   display: flex;
+  justify-content: center;
 }
 
 .about__avatar {
@@ -231,7 +240,7 @@ p {
   object-position: 0% 20%;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
-  margin-left: 100px;
+
   margin-right: 150px;
 }
 
@@ -272,6 +281,7 @@ p {
 .job {
   display: flex;
   align-items: center;
+  margin-left: 150px;
 }
 
 .job__description {
@@ -466,7 +476,6 @@ p {
 }
 
 .contact__title,
-.contact__email,
 .contact__rights {
   color: var(--color-white);
 }
