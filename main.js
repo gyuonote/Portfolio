@@ -60,13 +60,12 @@ homeContactBtn.addEventListener("click", () => {
 
 //Make home slowly fade to transparent as the window scrolls down
 
-const home = document.querySelector(".home__container");
+const home = document.querySelector(".text");
 const homeHeight = home.getBoundingClientRect().height;
-/*
+
 document.addEventListener("scroll", () => {
-  home.style.opacity = 1 - window.scrollY / homeHeight;
+  home.style.opacity = 1.2 - window.scrollY / homeHeight;
 });
-*/
 
 // Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector(".arrow-up");
@@ -171,4 +170,15 @@ window.addEventListener("wheel", () => {
     selectedNavIndex = navItems.length - 1;
   }
   selectNavItem(navItems[selectedNavIndex]);
+});
+
+// skill 스크롤 페이드인 효과
+const skill = document.querySelector("#skills");
+const skillHeight = skill.getBoundingClientRect().height;
+
+const skills = document.querySelector(".skill__value");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > skillHeight / 2) {
+    skills.classList.add("active");
+  }
 });
