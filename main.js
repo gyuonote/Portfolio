@@ -171,14 +171,3 @@ window.addEventListener("wheel", () => {
   }
   selectNavItem(navItems[selectedNavIndex]);
 });
-
-// skill 스크롤 페이드인 효과
-const skill = document.querySelector("#skills");
-const skillHeight = skill.getBoundingClientRect().height;
-
-const skills = document.querySelector(".skill__value");
-document.addEventListener("scroll", () => {
-  if (window.scrollY > skillHeight / 2) {
-    skills.classList.add("active");
-  }
-});
